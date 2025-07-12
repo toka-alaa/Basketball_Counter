@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../widgets/button_ui.dart';
+import '../widgets/counter_text.dart';
 import '../widgets/team_name.dart';
 
 class HomePage extends StatefulWidget {
@@ -102,33 +103,4 @@ class _HomePageState extends State<HomePage> {
 }
 
 
-class TextACounter extends StatelessWidget {
-  final int score1 ;
-  const TextACounter({super.key, required this.score1});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(score1.toString(),
-      style: TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.w600
-      ),);
-  }
-}
-
-
-class TextBCounter extends StatelessWidget {
-  
-  final int score2 ;
-  const TextBCounter({super.key, required this.score2});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(score2.toString(),
-      style: TextStyle(
-          fontSize: 40,
-          fontWeight: FontWeight.w600
-      ),);
-  }
-}
 
